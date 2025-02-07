@@ -6,7 +6,7 @@ $body-foreground: $gallery !default;
 $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
-$container-max-width: 1000px;
+$container-max-width: 1680px;
 
 @mixin media-max-width($max-width) {
   @media (max-width: $max-width) {
@@ -27,7 +27,7 @@ body {
 /* General & 'Reset' Stuff */
 
 .container {
-  width: 90%;
+  width: 95%;
   max-width: $container-max-width;
   margin: 0 auto;
 }
@@ -57,6 +57,7 @@ header {
   border-bottom: 1px dashed $conifer; //header;
   padding: 20px 0;
   margin: 0 0 40px 0;
+  text-align: center;
 }
 
 header h1 {
@@ -149,14 +150,15 @@ dt {
   font-weight: bold;
 }
 
-ul li {
-  list-style-image:url('../images/bullet.png');
+ul li{
+  list-style-image:url('../images/dot.png');
 }
 
 blockquote {
-  color: $blockquote-color;
-  padding-left: 10px;
-  border-left: 1px dotted $blockquote-border;
+  padding-left: 5px;
+  margin-left: 2px;
+  border-left: 2px dashed #cc0;
+  background-color: #2a2a2a;
 }
 
 pre {
@@ -176,7 +178,7 @@ code.highlighter-rouge {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0px 3px;
   margin: 0px -3px;
-  color: #aa759f;
+  color: #ba85af;
   border-radius: 2px;
 }
 
@@ -187,11 +189,16 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #b5e853;
+  border: 1px dashed #b5e853;
+  border-right: 0px; // 设置边框，这里的颜色可以根据需求调整
   padding: 5px 10px;
 }
 
 td {
+  border-style: solid;
+  border-right: 0px; // 设置边框，这里的颜色可以根据需求调整
+  border-top: 0px;
+  border-color: #ccc;
   padding: 5px 10px;
 }
 
