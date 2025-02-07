@@ -1,0 +1,24 @@
+.container {
+    width: 100%;
+}
+
+.layout {
+    display: flex;
+}
+
+.toc-sidebar {
+    width: 20%; /* 调整目录宽度，可根据需求修改 */
+    padding: 10px;
+    /* background-color: #f0f0f0; /* 可选的背景颜色 */
+    position: sticky;
+    top: 0; /* 距离顶部的距离，这里设置为 0 表示紧贴顶部 */
+    height: fit-content; /* 确保侧边栏高度根据内容自适应 */
+    max-height: 100vh; /* 最大高度为视口高度 */
+    overflow-y: auto; /* 如果内容超出高度，显示垂直滚动条 */
+    margin-right: 30px; /* 调整目录右侧的外边距，增加与正文的间距 */
+}
+
+.main-content {
+    width: 80%; /* 调整主要内容宽度，可根据需求修改 */
+    padding: 10px;
+}
