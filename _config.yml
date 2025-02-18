@@ -3,3 +3,11 @@ description: Hacker is a theme for GitHub Pages.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
+markdown: kramdown
+kramdown:
+  # input: GFM
+  # syntax_highlighter: rouge
+  toc_levels: 2..4
+  # smart_quotes: apos,quot,apos,quot
+  footnote_nr: "1"
+  show_warnings: true
