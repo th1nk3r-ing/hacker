@@ -7,7 +7,7 @@
 }
 
 .toc-sidebar {
-    width: 25%; /* 调整目录宽度，可根据需求修改 */
+    width: 30%; /* 调整目录宽度，可根据需求修改 */
     padding: 10px;
     padding-left: 25px;
     position: sticky;
@@ -18,7 +18,7 @@
 }
 
 .main-content {
-    width: 75%; /* 调整主要内容宽度，可根据需求修改 */
+    width: 70%; /* 调整主要内容宽度，可根据需求修改 */
     padding: 10px;
     padding-right: 85px;
 }
