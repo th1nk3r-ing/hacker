@@ -7,18 +7,20 @@
 }
 
 .toc-sidebar {
-    width: 30%; /* 调整目录宽度，可根据需求修改 */
+    width: 28%; /* 调整目录宽度，可根据需求修改 */
     padding: 10px;
     padding-left: 25px;
     position: sticky;
     top: 0; /* 距离顶部的距离，这里设置为 0 表示紧贴顶部 */
     height: fit-content; /* 确保侧边栏高度根据内容自适应 */
+    min-width: 320px;
     max-height: 100vh; /* 最大高度为视口高度 */
     overflow-y: auto; /* 如果内容超出高度，显示垂直滚动条 */
 }
 
 .main-content {
-    width: 70%; /* 调整主要内容宽度，可根据需求修改 */
+    width: 72%; /* 调整主要内容宽度，可根据需求修改 */
     padding: 10px;
-    padding-right: 85px;
+    padding-left: 40px;
+    padding-right: 80px;
 }
