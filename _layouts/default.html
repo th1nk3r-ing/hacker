@@ -13,20 +13,21 @@
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 
     <!-- https://cdnjs.com/libraries/mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
             type="text/javascript"
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
-            defter>
+            defer>
     </script>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']],
-          processEscapes: true
-        }
-      });
-    </script>
+
   </head>
 
   <body>
@@ -44,6 +45,7 @@
             <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
           {% endif %}
           <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+          <a href="{{ '/' | relative_url }}" class="btn">返回主页</a>
         </section>
       </div>
     </header>

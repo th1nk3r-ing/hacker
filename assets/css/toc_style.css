@@ -1,26 +1,37 @@
-.container {
-    width: 100%;
-}
-
 .layout {
     display: flex;
+    gap: 2vw;
 }
 
 .toc-sidebar {
-    width: 28%; /* 调整目录宽度，可根据需求修改 */
-    padding: 10px;
-    padding-left: 25px;
+    width: 22%;
+    max-width: 260px;
+    min-width: 160px;
+    padding: 1.5vh 1vw;
     position: sticky;
-    top: 0; /* 距离顶部的距离，这里设置为 0 表示紧贴顶部 */
-    height: fit-content; /* 确保侧边栏高度根据内容自适应 */
-    min-width: 320px;
-    max-height: 100vh; /* 最大高度为视口高度 */
-    overflow-y: auto; /* 如果内容超出高度，显示垂直滚动条 */
+    top: 0;
+    height: fit-content;
+    max-height: 100vh;
+    overflow-y: auto;
+    flex-shrink: 1;
 }
 
 .main-content {
-    width: 72%; /* 调整主要内容宽度，可根据需求修改 */
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 80px;
+    flex: 1;
+    min-width: 0;
+    padding: 1.5vh 2vw;
+}
+
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+    }
+    .toc-sidebar {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        position: static;
+        max-height: none;
+        padding: 1.5vh 2vw;
+    }
 }
