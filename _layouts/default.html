@@ -12,15 +12,9 @@
 
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 
-    <!-- https://cdnjs.com/libraries/mathjax -->
+    <!-- kramdown math_engine outputs <script type="math/tex">, MathJax 3 natively processes these -->
     <script>
       window.MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']],
-          processEscapes: true,
-          processEnvironments: true
-        },
         options: {
           skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
         }
