@@ -12,19 +12,23 @@
 
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 
-    <!-- kramdown math_engine outputs <script type="math/tex">, MathJax 3 natively processes these -->
+    <!-- MathJax v4 | https://jsbin.com/yoyopinico/edit?html,output -->
     <script>
       window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true,
+          processEnvironments: true
+        },
         options: {
-          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'annotation', 'annotation-xml']
         }
       };
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-            type="text/javascript"
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-            defer>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+            crossorigin="anonymous">
     </script>
 
   </head>
